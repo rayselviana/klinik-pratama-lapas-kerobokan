@@ -1,0 +1,198 @@
+/* Global Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+  margin: 0;
+}
+
+/* Card Styles */
+.wbp-card {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 16px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.wbp-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.wbp-card div {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #262626;
+}
+
+.wbp-card div strong {
+  color: #8e8e8e;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+  box-sizing: border-box; /* Pastikan padding tidak melebihi lebar */
+}
+
+.search-bar:focus {
+  border-color: #a8a8a8;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 0 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.pagination button:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination button.active {
+  background-color: #0095f6;
+  color: #fff;
+  border-color: #0095f6;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff; /* Warna teks putih */
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  border-color: #333;
+  color: #ffffff; /* Warna teks putih */
+}
+
+body.dark-mode header {
+  border-color: #333;
+  color: #ffffff; /* Warna teks putih */
+}
+
+body.dark-mode header h1 {
+  color: #ffffff; /* Warna teks putih untuk header */
+}
+
+body.dark-mode .wbp-card {
+  background-color: #2d2d2d;
+  border-color: #333;
+  color: #ffffff; /* Warna teks putih */
+}
+
+body.dark-mode .wbp-card div strong {
+  color: #a8a8a8; /* Warna teks abu-abu untuk label */
+}
+
+body.dark-mode .search-bar {
+  background-color: #2d2d2d;
+  border-color: #333;
+  color: #ffffff; /* Warna teks putih */
+}
+
+body.dark-mode .search-bar:focus {
+  border-color: #555;
+}
+
+body.dark-mode .pagination button {
+  background-color: #2d2d2d;
+  border-color: #333;
+  color: #ffffff; /* Warna teks putih */
+}
+
+body.dark-mode .pagination button:hover {
+  background-color: #444;
+}
+
+body.dark-mode .pagination button.active {
+  background-color: #0095f6;
+  color: #fff;
+  border-color: #0095f6;
+}
+
+/* Pastikan semua teks di dalam card berwarna putih */
+body.dark-mode .wbp-card div {
+  color: #ffffff; /* Warna teks putih */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"], input[type="password"] {
+    width: 90%;
+  }
+
+  li {
+    padding: 0.5rem;
+  }
+
+  .pagination button {
+    padding: 0.25rem 0.5rem;
+    margin: 0.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .pagination button {
+    font-size: 0.8rem;
+  }
+}
